@@ -13,17 +13,19 @@ In my case (linux) it is in the `/usr/lib/python3.8/randomlib.py`
 
 There are a few available functions ...
 
-- `send_f( ip of the reciver in string format, port of the reciver server [recomended to use a number over 4000],filedirectory as string)` _(void)_
+- `send_f( ip, port, filepath)` _(void)_
 
-  Sends a file bite by bite using sockets.
+  Sends a file bite by bite using sockets. **ip** is a string of the recivers ip **port** is a number in the range of preferably[4000-65535]
 
-- `recv_f(ip from witch to recive a file [Default = "0.0.0.0" allowing anyone to connect to your pc and send a file], port on witch to recive the file ,path and name you want the recived file to have)` _(touple)_
+- `recv_f( ip, port, filepath)` _(tuple)_
 
   Listens for an other computer to send a file using the `send_f` function and returns the ip and port from witch the file was sent.
+  The **ip** and port used in this function must coincide with the ones you used in the `send_f` function.the ip is optional here as it only used to
+  restrict from who to recive files , the defaut beeing everyone.
 
-- `sendcmd(ip [same as above],port,a bite string [b'string'],Debug=bolean [default = False] )` _( prints string saying if the connection was succesfull [only hapesn when Debug = True])_
+- `sendcmd(ip,port,a bite string [b'string'],Debug=bolean)` _( prints succesfull if the connection worked)_
   
-  Sends a bite string witch with you may do as you like 
+  Sends a bite string witch with you may do as you like. 
 - `recvcmd(ip,port,Debug=bolean[Default = False])`_(returns decoded bite string)_
   
   Listens for an other computer to send a bite string with the sendcmd function and decodes the recived bythe strin to return it.
