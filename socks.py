@@ -9,13 +9,6 @@ def recv_f(HOST="0.0.0.0",PORT,FILE):
   print ('Connected from', addr)
   try:
     
-    while 0: # this while dose nothing 
-      data = conn.recv(2048)
-      if not data:
-        conn, addr = s.accept()
-        print ('Connected from', addr)
-      conn.sendall(data)
-    
     with open(FILE,"wb") as tcp :   
       
       while 1:
@@ -55,7 +48,7 @@ def sendcmd(HOST,PORT,CMD,Debug=False):
     send.connect((HOST,PORT))
     send.sendall(CMD)
     
-    if not Debug : print('sent', CMD)
+    if Debug : print('sent', CMD)
     
     send.close()
   
@@ -67,7 +60,7 @@ def recvcmd(HOST,PORT,Debug=False):
     msg , addr = sr.accept()
     masa = msg.recv(2048)
     
-    if not Debug : print(addr,' sent: ',masa)
+    if Debug : print(addr,' sent: ',masa)
     
     sr.close()
     masa = masa.decode()
