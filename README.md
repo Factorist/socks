@@ -2,7 +2,7 @@
 
 ### Description
 
-A soket dependent python library that makes sending files and strings more easy and faster than sftp methodes.
+A soket dependent python library that makes sending files and strings esier and it's faster than sftp methodes.
 
 ### Instalation 
 
@@ -15,7 +15,7 @@ There are a few available functions ...
 
 - `send_f( ip, port, filepath)` _(void)_
 
-  Sends a file bite by bite using sockets. **ip** is a string of the recivers ip **port** is a number in the range of preferably[4000-65535]
+  Sends a file byte by byte using sockets. **ip** is a string of the recivers ip **port** is a number in the range of preferably[4000-65535]
 
 - `recv_f( ip, port, filepath)` _(tuple)_
 
