@@ -23,7 +23,7 @@ There are a few available functions ...
   The **ip** and **port** used in this function must coincide with the ones you used in the `send_f` function.the ip is optional here as it's only used to
   restrict from who to recive files , the defaut beeing everyone.
 
-- `sendcmd(ip,port,a bite string [b'string'],Debug=bolean)` _( prints succesfull if the connection worked)_
+- `sendcmd(ip,port,a byte string [b'string'],Debug=bolean)` _( prints succesfull if the connection worked)_
   
   Sends a byte string wich with you may do as you like. 
 - `recvcmd(ip,port,Debug=bolean)`_(returns decoded bite string)_
