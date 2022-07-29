@@ -19,7 +19,7 @@ There are a few available functions ...
 
 - `recv_f( ip, port, filepath)` _(tuple)_
 
-  Listens for an other computer to send a file using the `send_f` function and returns the ip and port from witch the file was sent.
+  Listens for another computer to send a file using the `send_f` function and returns the ip and port from witch the file was sent.
   The **ip** and **port** used in this function must coincide with the ones you used in the `send_f` function.the ip is optional here as it only used to
   restrict from who to recive files , the defaut beeing everyone.
 
