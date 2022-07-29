@@ -20,16 +20,16 @@ There are a few available functions ...
 - `recv_f( ip, port, filepath)` _(tuple)_
 
   Listens for another computer to send a file using the `send_f` function and returns the ip and port from witch the file was sent.
-  The **ip** and **port** used in this function must coincide with the ones you used in the `send_f` function.the ip is optional here as it only used to
+  The **ip** and **port** used in this function must coincide with the ones you used in the `send_f` function.the ip is optional here as it's only used to
   restrict from who to recive files , the defaut beeing everyone.
 
 - `sendcmd(ip,port,a bite string [b'string'],Debug=bolean)` _( prints succesfull if the connection worked)_
   
-  Sends a byte string witch with you may do as you like. 
+  Sends a byte string wich with you may do as you like. 
 - `recvcmd(ip,port,Debug=bolean)`_(returns decoded bite string)_
   
-  Listens for an other computer to send a byte string with the `sendcmd` function and decodes the recived byte string to return it.
-  If the **Debug** bolean is True it prints the bite string as recived with out decodeing it and the ip and port of who sent it.
+  Listens for an other computer to send a byte string wich the `sendcmd` function and decodes the recived byte string to return it.
+  If the **Debug** bolean is True it prints the bite string as recived with out decoding it and the ip and port of who sent it.
   The **Debug** variable default state is False
 
  made by the Factorist
