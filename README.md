@@ -2,9 +2,9 @@
 
 ### Description
 
-A soket dependent python library that makes sending files and strings esier and it's faster than sftp methodes.
+A socket dependent python library that makes sending files and strings convenient, and it's faster than sftp methodes.
 
-### Instalation 
+### Installation 
 
 download it and add it to the python lib folder on your PC , Then import it in your python project.
 In my case (linux) it is in the `/usr/lib/python3.8/randomlib.py`
