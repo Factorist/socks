@@ -26,7 +26,7 @@ There are a few available functions ...
 - `sendcmd(ip,port,a byte string [b'string'],Debug=bolean)` _( prints succesfull if the connection worked)_
   
   Sends a byte string wich with you may do as you like. 
-- `recvcmd(ip,port,Debug=bolean)`_(returns decoded bite string)_
+- `recvcmd(ip,port,Debug=bolean)`_(returns decoded byte string)_
   
   Listens for an other computer to send a byte string wich the `sendcmd` function and decodes the recived byte string to return it.
   If the **Debug** bolean is True it prints the bite string as recived with out decoding it and the ip and port of who sent it.
